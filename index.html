@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width, initial-scale=1, viewport-fit=cover" name="viewport"/>
+<meta content="INSTANTS" name="author"/>
+<meta content="INSTANTS | Food Delivery" name="description"/>
+<title>INSTANTS | Food Delivery</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&amp;family=Poppins:wght@300;400;500;600;700&amp;family=Dancing+Script:wght@700&amp;display=swap" rel="stylesheet"/>
+<!-- Bootstrap 5.3 -->
+<link href="css/bootstrap.min.css" rel="stylesheet"/>
+<!-- AOS Animate on Scroll -->
+<link href="css/aos.css" rel="stylesheet"/>
+<!-- Swiper -->
+<link href="css/swiper-bundle.min.css" rel="stylesheet"/>
+<!-- all min css -->
+<link href="css/all.min.css" rel="stylesheet"/>
+<!-- magnific CSS -->
+<link href="css/magnific-popup.css" rel="stylesheet"/>
+<!-- Style CSS -->
+<link href="css/style.css" rel="stylesheet"/>
+</head>
+<body>
+<!-- ============================================================
+         TOP BAR
+         ============================================================ -->
+<div id="topbar">
+<div class="container">
+<div class="d-flex justify-content-between align-items-center flex-wrap gap-2">
+<div class="top-contact d-flex flex-wrap">
+<span><i class="fas fa-phone-alt"></i>WhatsApp: +91 94059 16976</span>
+<span><i class="fas fa-envelope"></i></span>
+<span><i class="fas fa-map-marker-alt"></i>Choose your delivery location at checkout</span>
+</div>
+<div class="d-flex align-items-center gap-3">
+<span class="ttag"><i class="fas fa-fire me-1"></i>Free Delivery Today!</span>
+<div class="tsoc">
+<a href="#"><i class="fab fa-facebook-f"></i></a>
+<a href="#"><i class="fab fa-instagram"></i></a>
+<a href="#"><i class="fab fa-tiktok"></i></a>
+<a href="#"><i class="fab fa-youtube"></i></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- ============================================================
+         NAVBAR
+         ============================================================ -->
+<nav class="navbar navbar-expand-lg" id="nav">
+<div class="container">
+<a class="navbar-brand" href="#">INSTANTS</a>
+<button class="navbar-toggler border-0" data-bs-target="#navmenu" data-bs-toggle="collapse" type="button">
+<i class="fas fa-bars" style="color:var(--primary);font-size:1.35rem;"></i>
+</button>
+<div class="collapse navbar-collapse" id="navmenu">
+<ul class="navbar-nav mx-auto">
+<li class="nav-item"><a class="nav-link active" href="#hero">Home</a></li>
+<li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+<li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+<li class="nav-item"><a class="nav-link" href="#menu">Restaurants</a></li>
+<li class="nav-item"><a class="nav-link" href="#special">Offers</a></li>
+<li class="nav-item"><a class="nav-link" href="#menu">Popular</a></li>
+<li class="nav-item"><a class="nav-link" href="#contact-section">Contact</a></li>
+</ul>
+<div class="d-flex align-items-center gap-1">
+<!-- FIX 1: Search button -->
+<button id="navSearchBtn" title="Search"><i class="fas fa-search"></i></button>
+<a class="nav-link nav-cta" href="#menu"><i class="fas fa-shopping-bag me-1"></i>Order Now</a>
+</div>
+</div>
+</div>
+</nav>
+<!-- ============================================================
+         FIX 1 � SEARCH OVERLAY POPUP
+         ============================================================ -->
+<div id="searchOv">
+<button class="sovclose" id="searchClose"><i class="fas fa-times"></i></button>
+<div class="sovbox">
+<h4>What are you craving today?</h4>
+<div class="sovinput">
+<input autocomplete="off" id="searchInput" placeholder="Search burgers, pizza, chicken..." type="text"/>
+<button><i class="fas fa-search"></i></button>
+</div>
+<!-- Categories inside search box -->
+<div class="sovcats">
+<div class="sovcat active" data-cat="all">
+<img alt="" src="img/menu/1.jpg"/>All Items
+               </div>
+<div class="sovcat" data-cat="burgers">
+<img alt="" src="img/menu/1.jpg"/>Burgers
+               </div>
+<div class="sovcat" data-cat="pizza">
+<img alt="" src="img/menu/2.jpg"/>Pizza
+               </div>
+<div class="sovcat" data-cat="chicken">
+<img alt="" src="img/menu/3.jpg"/>Chicken
+               </div>
+<div class="sovcat" data-cat="wraps">
+<img alt="" src="img/menu/4.jpg"/>Wraps
+               </div>
+<div class="sovcat" data-cat="pasta">
+<img alt="" src="img/menu/5.jpg"/>Pasta
+               </div>
+<div class="sovcat" data-cat="desserts">
+<img alt="" src="img/menu/6.jpg"/>Desserts
+               </div>
+</div>
+<div class="sovtrend">
+<p><i class="fas fa-fire me-1" style="color:var(--secondary);"></i>Trending Searches</p>
+<span class="ttag">Smash Burger</span>
+<span class="ttag">Nashville Chicken</span>
+<span class="ttag">Truffle Pizza</span>
+<span class="ttag">Lava Cake</span>
+<span class="ttag">Loaded Fries</span>
+<span class="ttag">Mango Shake</span>
+</div>
+</div>
+</div>
+<!-- ============================================================
+         HERO
+         ============================================================ -->
+<section id="hero">
+<div class="hs hs1"></div>
+<div class="hs hs2"></div>
+<div class="hbgtxt">FOOD</div>
+<div class="container">
+<div class="row align-items-center g-5" style="min-height:88vh;">
+<div class="col-lg-6">
+<div class="hbadge">
+<div class="hbi"><i class="fas fa-star"></i></div>
+<span>WELCOME TO INSTANTS</span>
+</div>
+<h1 class="htitle">Good Food. Good Mood.</h1>
+<p class="hdesc">Discover delicious food from the best restaurants and get it delivered to your doorstep.</p>
+<div class="d-flex flex-wrap gap-3 mb-2">
+<a class="btn-red" href="#menu">Explore Restaurants</a>
+<!-- FIX 2: Magnific popup video trigger -->
+<a class="magnific_popup btn-play popup-youtube" href="#menu">Browse Food</a>
+</div>
+
+</div>
+<div class="col-lg-6">
+<div style="position:relative;text-align:center;">
+<div class="hcircle">
+<img alt="Freshly prepared pizza" src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=700"/>
+</div>
+
+
+
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- MARQUEE -->
+<div class="mqsec">
+<div class="mqtrack">
+<div class="mqitem"><i class="fas fa-circle"></i>Crispy Fried Chicken</div>
+<div class="mqitem"><i class="fas fa-circle"></i>Gourmet Burgers</div>
+<div class="mqitem"><i class="fas fa-circle"></i>Artisan Pizzas</div>
+<div class="mqitem"><i class="fas fa-circle"></i>Fresh Wraps &amp; Rolls</div>
+<div class="mqitem"><i class="fas fa-circle"></i>Loaded Fries</div>
+<div class="mqitem"><i class="fas fa-circle"></i>Ice Cream Shakes</div>
+<div class="mqitem"><i class="fas fa-circle"></i>Grilled Sandwiches</div>
+<div class="mqitem"><i class="fas fa-circle"></i>Crispy Fried Chicken</div>
+<div class="mqitem"><i class="fas fa-circle"></i>Gourmet Burgers</div>
+<div class="mqitem"><i class="fas fa-circle"></i>Artisan Pizzas</div>
+<div class="mqitem"><i class="fas fa-circle"></i>Fresh Wraps &amp; Rolls</div>
+<div class="mqitem"><i class="fas fa-circle"></i>Loaded Fries</div>
+<div class="mqitem"><i class="fas fa-circle"></i>Ice Cream Shakes</div>
+<div class="mqitem"><i class="fas fa-circle"></i>Grilled Sandwiches</div>
+</div>
+</div>
+<!-- CATEGORY -->
+<section id="category">
+<div class="container">
+<div class="text-center mb-5" data-aos="fade-up">
+<span class="slbl">What We Offer</span>
+<h2 class="stitle">What’s on your mind?</h2>
+<div class="sline"></div>
+<p class="sdesc mx-auto" style="max-width:480px;">Choose a category and discover something delicious.</p>
+</div>
+<div class="row g-3 justify-content-center">
+<div class="col-6 col-sm-4 col-md-3 col-lg-2" data-aos="zoom-in" data-aos-delay="0">
+<div class="catcard active" data-filter="all">
+<img alt="All Food" class="catimg" src="https://images.unsplash.com/photo-1547592180-85f173990554?w=300"/>
+<div class="catnm">All Food</div>
+
+</div>
+</div>
+<div class="col-6 col-sm-4 col-md-3 col-lg-2" data-aos="zoom-in" data-aos-delay="70">
+<div class="catcard" data-filter="pizza">
+<img alt="Pizza" class="catimg" src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=300"/>
+<div class="catnm">Pizza</div>
+
+</div>
+</div>
+<div class="col-6 col-sm-4 col-md-3 col-lg-2" data-aos="zoom-in" data-aos-delay="140">
+<div class="catcard" data-filter="burger">
+<img alt="Burger" class="catimg" src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=300"/>
+<div class="catnm">Burger</div>
+
+</div>
+</div>
+<div class="col-6 col-sm-4 col-md-3 col-lg-2" data-aos="zoom-in" data-aos-delay="210">
+<div class="catcard" data-filter="biryani">
+<img alt="Biryani" class="catimg" src="https://images.unsplash.com/photo-1589302168068-964664d93dc0?w=300"/>
+<div class="catnm">Biryani</div>
+
+</div>
+</div>
+<div class="col-6 col-sm-4 col-md-3 col-lg-2" data-aos="zoom-in" data-aos-delay="280">
+<div class="catcard" data-filter="chinese">
+<img alt="Chinese" class="catimg" src="https://images.unsplash.com/photo-1585032226651-759b368d7246?w=300"/>
+<div class="catnm">Chinese</div>
+
+</div>
+</div>
+<div class="col-6 col-sm-4 col-md-3 col-lg-2" data-aos="zoom-in" data-aos-delay="350">
+
+</div>
+</div>
+</div>
+</section>
+<!-- ABOUT -->
+<section id="about">
+<div class="container">
+<div class="row align-items-center g-5">
+<div class="col-lg-5" data-aos="fade-right">
+<div class="astack">
+
+<div class="amain"><img alt="Restaurant" src="img/about1.jpg"/></div>
+<div class="asm"><img alt="" src="img/about2.jpg"/></div>
+</div>
+</div>
+<div class="col-lg-7" data-aos="fade-left">
+<span class="slbl">Our Story</span>
+<h2 class="stitle text-start">Good Food, Delivered <span>Instantly</span></h2>
+<div class="sline lft"></div>
+<p class="sdesc mb-4">INSTANTS helps you discover delicious food from restaurants and order it conveniently for delivery.</p>
+<div class="mb-4">
+<div class="fti">
+<div class="ftico r"><i class="fas fa-leaf"></i></div>
+<div>
+<h6>Explore Restaurants</h6>
+<p>Browse restaurants and discover food across popular categories.</p>
+</div>
+</div>
+<div class="fti">
+<div class="ftico y"><i class="fas fa-award"></i></div>
+<div>
+<h6>Find Your Favorites</h6>
+<p>Search for dishes or restaurants that match your cravings.</p>
+</div>
+</div>
+<div class="fti">
+<div class="ftico g"><i class="fas fa-shipping-fast"></i></div>
+<div>
+<h6>Easy Ordering</h6>
+<p>Add items to your cart and place your order through WhatsApp.</p>
+</div>
+</div>
+</div>
+<a class="btn-red" href="#menu"><i class="fas fa-book-open"></i>View Full Menu</a>
+</div>
+</div>
+</div>
+</section>
+<!-- ============================================================
+         MENU � FIX 3 (filter works) + FIX 4 (plus opens popup)
+         ============================================================ -->
+<section id="menu">
+<div class="container">
+<div class="text-center mb-5" data-aos="fade-up">
+<span class="slbl">What's Cooking</span>
+<h2 class="stitle">Explore Our <span>Menu</span></h2>
+<div class="sline"></div>
+</div>
+<!-- FIX 3 � filter buttons -->
+<div class="text-center mb-4" data-aos="fade-up"><button class="filtbtn active" data-f="all">All</button><button class="filtbtn" data-f="pizza">Pizza</button><button class="filtbtn" data-f="burger">Burger</button><button class="filtbtn" data-f="biryani">Biryani</button><button class="filtbtn" data-f="chinese">Chinese</button><button class="filtbtn" data-f="dessert">Desserts</button></div>
+<div class="row g-4" id="mgrid"><div class="col-sm-6 col-lg-4 mwrap" data-aos="fade-up" data-c="pizza"><div class="mcard" data-cal="" data-cat="Pizza" data-desc="Classic pizza with a delicious cheese and tomato base." data-img="https://images.unsplash.com/photo-1579751626657-72bc17010498?w=400" data-old="" data-price="₹199" data-rating="4.5" data-reviews="" data-tags="Pizza" data-time="" data-title="Margherita Pizza"><div class="mimg"><img alt="Margherita Pizza" src="https://images.unsplash.com/photo-1579751626657-72bc17010498?w=400"/></div><div class="mbody"><div class="mcat">Pizza</div><div class="mtit">Margherita Pizza</div><div class="mdesc">Classic pizza with a delicious cheese and tomato base.</div><div class="mfoot"><div><div class="mprice">₹199</div><div class="mstars"></div></div><button class="madd" title="View Details"><i class="fas fa-plus"></i></button></div></div></div></div><div class="col-sm-6 col-lg-4 mwrap" data-aos="fade-up" data-c="pizza"><div class="mcard" data-cal="" data-cat="Pizza" data-desc="A cheesy pizza for a satisfying meal." data-img="https://images.unsplash.com/photo-1571407970349-bc81e7e96d47?w=400" data-old="" data-price="₹249" data-rating="4.5" data-reviews="" data-tags="Pizza" data-time="" data-title="Cheese Pizza"><div class="mimg"><img alt="Cheese Pizza" src="https://images.unsplash.com/photo-1571407970349-bc81e7e96d47?w=400"/></div><div class="mbody"><div class="mcat">Pizza</div><div class="mtit">Cheese Pizza</div><div class="mdesc">A cheesy pizza for a satisfying meal.</div><div class="mfoot"><div><div class="mprice">₹249</div><div class="mstars"></div></div><button class="madd" title="View Details"><i class="fas fa-plus"></i></button></div></div></div></div><div class="col-sm-6 col-lg-4 mwrap" data-aos="fade-up" data-c="pizza"><div class="mcard" data-cal="" data-cat="Pizza" data-desc="A tasty vegetable pizza." data-img="https://images.unsplash.com/photo-1604382355076-af4b0eb60143?w=400" data-old="" data-price="₹179" data-rating="4.5" data-reviews="" data-tags="Pizza" data-time="" data-title="Veg Pizza"><div class="mimg"><img alt="Veg Pizza" src="https://images.unsplash.com/photo-1604382355076-af4b0eb60143?w=400"/></div><div class="mbody"><div class="mcat">Pizza</div><div class="mtit">Veg Pizza</div><div class="mdesc">A tasty vegetable pizza.</div><div class="mfoot"><div><div class="mprice">₹179</div><div class="mstars"></div></div><button class="madd" title="View Details"><i class="fas fa-plus"></i></button></div></div></div></div><div class="col-sm-6 col-lg-4 mwrap" data-aos="fade-up" data-c="burger"><div class="mcard" data-cal="" data-cat="Burger" data-desc="A classic cheese burger." data-img="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=400" data-old="" data-price="₹129" data-rating="4.5" data-reviews="" data-tags="Burger" data-time="" data-title="Cheese Burger"><div class="mimg"><img alt="Cheese Burger" src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=400"/></div><div class="mbody"><div class="mcat">Burger</div><div class="mtit">Cheese Burger</div><div class="mdesc">A classic cheese burger.</div><div class="mfoot"><div><div class="mprice">₹129</div><div class="mstars"></div></div><button class="madd" title="View Details"><i class="fas fa-plus"></i></button></div></div></div></div><div class="col-sm-6 col-lg-4 mwrap" data-aos="fade-up" data-c="burger"><div class="mcard" data-cal="" data-cat="Burger" data-desc="A flavorful vegetarian burger." data-img="https://images.unsplash.com/photo-1550547660-d9450f859349?w=400" data-old="" data-price="₹99" data-rating="4.5" data-reviews="" data-tags="Burger" data-time="" data-title="Veg Burger"><div class="mimg"><img alt="Veg Burger" src="https://images.unsplash.com/photo-1550547660-d9450f859349?w=400"/></div><div class="mbody"><div class="mcat">Burger</div><div class="mtit">Veg Burger</div><div class="mdesc">A flavorful vegetarian burger.</div><div class="mfoot"><div><div class="mprice">₹99</div><div class="mstars"></div></div><button class="madd" title="View Details"><i class="fas fa-plus"></i></button></div></div></div></div><div class="col-sm-6 col-lg-4 mwrap" data-aos="fade-up" data-c="burger"><div class="mcard" data-cal="" data-cat="Burger" data-desc="A double burger for a hearty bite." data-img="https://images.unsplash.com/photo-1571091718767-18b5b1457add?w=400" data-old="" data-price="₹179" data-rating="4.5" data-reviews="" data-tags="Burger" data-time="" data-title="Double Burger"><div class="mimg"><img alt="Double Burger" src="https://images.unsplash.com/photo-1571091718767-18b5b1457add?w=400"/></div><div class="mbody"><div class="mcat">Burger</div><div class="mtit">Double Burger</div><div class="mdesc">A double burger for a hearty bite.</div><div class="mfoot"><div><div class="mprice">₹179</div><div class="mstars"></div></div><button class="madd" title="View Details"><i class="fas fa-plus"></i></button></div></div></div></div><div class="col-sm-6 col-lg-4 mwrap" data-aos="fade-up" data-c="biryani"><div class="mcard" data-cal="" data-cat="Biryani" data-desc="Aromatic vegetable biryani." data-img="img/menu/veg-biryani.jpg" data-old="" data-price="₹149" data-rating="4.5" data-reviews="" data-tags="Biryani" data-time="" data-title="Veg Biryani"><div class="mimg"><img alt="Veg Biryani" src="img/menu/veg-biryani.jpg"/></div><div class="mbody"><div class="mcat">Biryani</div><div class="mtit">Veg Biryani</div><div class="mdesc">Aromatic vegetable biryani.</div><div class="mfoot"><div><div class="mprice">₹149</div><div class="mstars"></div></div><button class="madd" title="View Details"><i class="fas fa-plus"></i></button></div></div></div></div><div class="col-sm-6 col-lg-4 mwrap" data-aos="fade-up" data-c="biryani"><div class="mcard" data-cal="" data-cat="Biryani" data-desc="Hyderabadi-style biryani." data-img="https://images.unsplash.com/photo-1589302168068-964664d93dc0?w=400" data-old="" data-price="₹229" data-rating="4.5" data-reviews="" data-tags="Biryani" data-time="" data-title="Hyderabadi Biryani"><div class="mimg"><img alt="Hyderabadi Biryani" src="https://images.unsplash.com/photo-1589302168068-964664d93dc0?w=400"/></div><div class="mbody"><div class="mcat">Biryani</div><div class="mtit">Hyderabadi Biryani</div><div class="mdesc">Hyderabadi-style biryani.</div><div class="mfoot"><div><div class="mprice">₹229</div><div class="mstars"></div></div><button class="madd" title="View Details"><i class="fas fa-plus"></i></button></div></div></div></div><div class="col-sm-6 col-lg-4 mwrap" data-aos="fade-up" data-c="biryani"><div class="mcard" data-cal="" data-cat="Biryani" data-desc="Biryani prepared with paneer." data-img="https://images.unsplash.com/photo-1633945274405-b6c8069047b0?w=400" data-old="" data-price="₹189" data-rating="4.5" data-reviews="" data-tags="Biryani" data-time="" data-title="Paneer Biryani"><div class="mimg"><img alt="Paneer Biryani" src="https://images.unsplash.com/photo-1633945274405-b6c8069047b0?w=400"/></div><div class="mbody"><div class="mcat">Biryani</div><div class="mtit">Paneer Biryani</div><div class="mdesc">Biryani prepared with paneer.</div><div class="mfoot"><div><div class="mprice">₹189</div><div class="mstars"></div></div><button class="madd" title="View Details"><i class="fas fa-plus"></i></button></div></div></div></div><div class="col-sm-6 col-lg-4 mwrap" data-aos="fade-up" data-c="chinese"><div class="mcard" data-cal="" data-cat="Chinese" data-desc="A serving of vegetable noodles." data-img="https://images.unsplash.com/photo-1585032226651-759b368d7246?w=400" data-old="" data-price="₹129" data-rating="4.5" data-reviews="" data-tags="Chinese" data-time="" data-title="Veg Noodles"><div class="mimg"><img alt="Veg Noodles" src="https://images.unsplash.com/photo-1585032226651-759b368d7246?w=400"/></div><div class="mbody"><div class="mcat">Chinese</div><div class="mtit">Veg Noodles</div><div class="mdesc">A serving of vegetable noodles.</div><div class="mfoot"><div><div class="mprice">₹129</div><div class="mstars"></div></div><button class="madd" title="View Details"><i class="fas fa-plus"></i></button></div></div></div></div><div class="col-sm-6 col-lg-4 mwrap" data-aos="fade-up" data-c="chinese"><div class="mcard" data-cal="" data-cat="Chinese" data-desc="A popular Indo-Chinese favorite." data-img="https://images.unsplash.com/photo-1582878826629-29b7ad1cdc43?w=400" data-old="" data-price="₹149" data-rating="4.5" data-reviews="" data-tags="Chinese" data-time="" data-title="Manchurian"><div class="mimg"><img alt="Manchurian" src="https://images.unsplash.com/photo-1582878826629-29b7ad1cdc43?w=400"/></div><div class="mbody"><div class="mcat">Chinese</div><div class="mtit">Manchurian</div><div class="mdesc">A popular Indo-Chinese favorite.</div><div class="mfoot"><div><div class="mprice">₹149</div><div class="mstars"></div></div><button class="madd" title="View Details"><i class="fas fa-plus"></i></button></div></div></div></div><div class="col-sm-6 col-lg-4 mwrap" data-aos="fade-up" data-c="dessert"><div class="mcard" data-cal="" data-cat="Dessert" data-desc="Chocolate cake for dessert." data-img="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=400" data-old="" data-price="₹99" data-rating="4.5" data-reviews="" data-tags="Dessert" data-time="" data-title="Chocolate Cake"><div class="mimg"><img alt="Chocolate Cake" src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=400"/></div><div class="mbody"><div class="mcat">Dessert</div><div class="mtit">Chocolate Cake</div><div class="mdesc">Chocolate cake for dessert.</div><div class="mfoot"><div><div class="mprice">₹99</div><div class="mstars"></div></div><button class="madd" title="View Details"><i class="fas fa-plus"></i></button></div></div></div></div><div class="col-sm-6 col-lg-4 mwrap" data-aos="fade-up" data-c="dessert"><div class="mcard" data-cal="" data-cat="Dessert" data-desc="Sweet, delicious donuts." data-img="https://images.unsplash.com/photo-1551024506-0bccd828d307?w=400" data-old="" data-price="₹79" data-rating="4.5" data-reviews="" data-tags="Dessert" data-time="" data-title="Donuts"><div class="mimg"><img alt="Donuts" src="https://images.unsplash.com/photo-1551024506-0bccd828d307?w=400"/></div><div class="mbody"><div class="mcat">Dessert</div><div class="mtit">Donuts</div><div class="mdesc">Sweet, delicious donuts.</div><div class="mfoot"><div><div class="mprice">₹79</div><div class="mstars"></div></div><button class="madd" title="View Details"><i class="fas fa-plus"></i></button></div></div></div></div></div>
+<!-- end #mgrid -->
+<div class="text-center mt-5"><a class="btn-red" href="#"><i class="fas fa-th-large"></i>View Full Menu</a></div>
+</div>
+</section>
+<!-- ============================================================
+         FIX 4 � MENU DETAIL POPUP MODAL
+         ============================================================ -->
+<div id="menuPop">
+<div class="mpbox">
+<button class="mpclose" id="mpClose"><i class="fas fa-times"></i></button>
+<div class="mpimg"><img alt="" id="mpImg" src=""/></div>
+<div class="mpbody">
+<div id="mpCat"></div>
+<div id="mpTitle"></div>
+<div id="mpStars"></div>
+<div id="mpDesc"></div>
+<div id="mpPrice"></div>
+<div class="mpmeta" id="mpMeta"></div>
+<div class="mpqty">
+<button class="mpqbtn" id="mpMinus">-</button>
+<span class="mpqnum" id="mpQnum">1</span>
+<button class="mpqbtn" id="mpPlus">+</button>
+<span style="font-size:.82rem;color:#aaa;margin-left:9px;">portion</span>
+</div>
+<div class="mptags" id="mpTags"></div>
+<button class="mpaddcart" id="mpAddCart"><i class="fas fa-shopping-cart"></i>Add to Cart</button>
+</div>
+</div>
+</div>
+<!-- SPECIAL OFFER -->
+<section id="special">
+<div class="spbg"></div>
+<div class="container" style="position:relative;z-index:2;">
+<div class="row align-items-center g-5">
+<div class="col-lg-6" data-aos="fade-right">
+<div class="sptag"><i class="fas fa-bolt me-1"></i>Limited Time Offer</div>
+<h2 class="sptitle">Get 50% Off</h2>
+<p class="spdesc">Enjoy delicious food at exciting prices. Check the available offers when you order.</p>
+
+<a class="btn-red" href="#menu">Explore the Menu</a>
+</div>
+<div class="col-lg-6" data-aos="fade-left">
+<div class="spimgw">
+<div class="spglow"></div>
+<div class="sppbdg"><span class="old"></span><span class="np"></span></div>
+<img alt="Special Burger" src="img/off-img.jpg"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ============================================================
+         GALLERY � FIX 7 (click opens detail popup)
+         ============================================================ -->
+<section id="gallery">
+<div class="container">
+<div class="text-center mb-5" data-aos="fade-up">
+<span class="slbl">Food Showcase</span>
+<h2 class="stitle">Let's See Our <span>Fast Food</span></h2>
+<div class="sline"></div>
+</div>
+<div class="ggrid" data-aos="fade-up">
+<div class="gitem" data-gdesc="Our award-winning smash burgers, hand-crafted with 100% premium beef, aged cheddar and house-made sauces." data-gi="0" data-gimg="img/portfolio/work1.jpg" data-gtitle="Gourmet Burgers">
+<img alt="Burgers" src="img/portfolio/work1.jpg"/>
+<div class="gover"><span><i class="fas fa-expand-alt"></i> Gourmet Burgers</span></div>
+</div>
+<div class="gitem" data-gdesc="Authentic Neapolitan-style pizzas fired at 900deg F in our wood-burning stone oven for the perfect char." data-gi="1" data-gimg="img/portfolio/work2.jpg" data-gtitle="Wood-Fired Pizza">
+<img alt="Pizza" src="img/portfolio/work2.jpg"/>
+<div class="gover"><span><i class="fas fa-expand-alt"></i> Wood-Fired Pizza</span></div>
+</div>
+<div class="gitem" data-gdesc="Double-brined, hand-battered chicken fried to golden perfection using our 15-spice secret blend." data-gi="2" data-gimg="img/portfolio/work3.jpg" data-gtitle="Crispy Fried Chicken">
+<img alt="Chicken" src="img/portfolio/work3.jpg"/>
+<div class="gover"><span><i class="fas fa-expand-alt"></i> Crispy Fried Chicken</span></div>
+</div>
+<div class="gitem" data-gdesc="Handcrafted desserts - from molten lava cakes to artisan ice cream sundaes and seasonal pastries." data-gi="3" data-gimg="img/portfolio/work4.jpg" data-gtitle="Sweet Desserts">
+<img alt="Desserts" src="img/portfolio/work4.jpg"/>
+<div class="gover"><span><i class="fas fa-expand-alt"></i> Sweet Desserts</span></div>
+</div>
+<div class="gitem" data-gdesc="Loaded fresh wraps packed with grilled proteins, crunchy vegetables and our house-made sauces." data-gi="4" data-gimg="img/portfolio/work5.jpg" data-gtitle="Fresh Wraps &amp; Rolls">
+<img alt="Wraps" src="img/portfolio/work5.jpg"/>
+<div class="gover"><span><i class="fas fa-expand-alt"></i> Fresh Wraps &amp; Rolls</span></div>
+</div>
+</div>
+</div>
+</section>
+<!-- FIX 7 � GALLERY POPUP -->
+<div id="galPop">
+<div class="gpbox">
+<button class="gpclose" id="gpClose"><i class="fas fa-times"></i></button>
+<img alt="" id="gpImg" src=""/>
+<div class="gpcap">
+<h5 id="gpTitle"></h5>
+<p id="gpDesc"></p>
+</div>
+<div class="gpnav">
+<button id="gpPrev"><i class="fas fa-chevron-left me-1"></i>Prev</button>
+<button id="gpNext">Next <i class="fas fa-chevron-right ms-1"></i></button>
+</div>
+</div>
+</div>
+<!-- ============================================================
+         HISTORY � FIX 8 (alternating left/right text)
+         ============================================================ -->
+
+<!-- CHEFS -->
+
+<!-- HOURS -->
+<section id="hours"><div class="container"><div class="row align-items-center g-4"><div class="col-lg-7"><span class="slbl">Order Online</span><h2 class="stitle text-start">Your Food, <span>Your Way</span></h2><p class="sdesc">Browse restaurants, choose your favorite dishes, and place your order through WhatsApp.</p></div><div class="col-lg-5"><a class="btn-red" href="https://wa.me/919405916976" rel="noopener" target="_blank">Order on WhatsApp</a></div></div></div></section>
+<!-- TESTIMONIALS -->
+
+<!-- RESERVATION FORM -->
+
+<!-- BLOG -->
+
+<!-- NEWSLETTER -->
+<section id="newsletter">
+<div class="nlbg"></div>
+<div class="container">
+<div class="nlw text-center" data-aos="zoom-in">
+<span class="slbl" style="color:rgba(255,255,255,.7);">Stay Connected</span>
+<h2 class="mb-3" style="color:#fff;">Subscribe &amp; Get Exclusive <span style="color:var(--secondary);">Deals</span></h2>
+<p class="mb-4" style="color:rgba(255,255,255,.78);">Get updates about new menu items and offers.</p>
+<div class="nl-form-wrap">
+<input class="nlinput" id="nlEmail" placeholder="Enter your email address..." type="email"/>
+<button class="nlbtn" id="nlBtn"><i class="fas fa-paper-plane me-1"></i>Subscribe</button>
+</div>
+<p style="color:rgba(255,255,255,.45);font-size:.76rem;margin-top:11px;"><i class="fas fa-lock me-1"></i>No spam, unsubscribe anytime.</p>
+</div>
+</div>
+</section>
+<!-- ============================================================
+         FIX 6 � CONTACT FORM
+         ============================================================ -->
+<section id="contact-section">
+<div class="container">
+<div class="text-center mb-5" data-aos="fade-up">
+<span class="slbl">Get In Touch</span>
+<h2 class="stitle">Contact <span>Us</span></h2>
+<div class="sline"></div>
+<p class="sdesc mx-auto" style="max-width:480px;">Have a question about an order or menu item? Contact us on WhatsApp.</p>
+</div>
+<div class="row g-4">
+<div class="col-lg-4" data-aos="fade-right">
+<div class="ctdark">
+<h4>Let's Talk</h4>
+<p class="ctsub">Contact INSTANTS through WhatsApp for order-related questions.</p>
+<div class="ctitem">
+<div class="cticon"><i class="fas fa-map-marker-alt"></i></div>
+<div class="ctinfo"><strong>Address</strong><span>Choose your delivery location at checkout</span></div>
+</div>
+<div class="ctitem">
+<div class="cticon"><i class="fas fa-phone-alt"></i></div>
+<div class="ctinfo"><strong>Phone</strong><span>WhatsApp: +91 94059 16976</span></div>
+</div>
+
+
+<div class="ctsocrow">
+<a href="#"><i class="fab fa-facebook-f"></i></a>
+<a href="#"><i class="fab fa-instagram"></i></a>
+<a href="#"><i class="fab fa-twitter"></i></a>
+<a href="#"><i class="fab fa-youtube"></i></a>
+</div>
+</div>
+</div>
+<div class="col-lg-8" data-aos="fade-left">
+<div class="fcard">
+<div class="row g-3">
+<div class="col-sm-6"><label class="flbl">Your Name *</label><input class="fctrl" placeholder="John Doe" type="text"/></div>
+<div class="col-sm-6"><label class="flbl">WhatsApp Number</label><input class="fctrl phone-only" placeholder="Your WhatsApp number (optional)" type="tel" inputmode="numeric" maxlength="10" pattern="[0-9]{10}"/></div>
+<div class="col-sm-6">
+<label class="flbl">Subject *</label>
+<select class="fctrl"><option>Order Inquiry</option><option>Menu Question</option><option>Feedback</option><option>Other</option></select>
+</div>
+<div class="col-12"><label class="flbl">Message *</label><textarea class="fctrl" placeholder="Write your message here..." rows="5"></textarea></div>
+<div class="col-12"><a class="btn-red" href="https://wa.me/919405916976" rel="noopener" target="_blank">Contact on WhatsApp</a></div>
+</div>
+<div class="sucmsg" id="ctcOk">
+<i class="fas fa-check-circle"></i>
+<p>Message sent! We'll reply within 2 hours.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- FOOTER -->
+<footer>
+<div class="container">
+<div class="row g-5">
+<div class="col-lg-4">
+<div class="fnm">INSTANTS.</div>
+<p class="fdesc">Good food. Great mood. Delivered instantly.</p>
+<div class="fsoc">
+<a href="#"><i class="fab fa-facebook-f"></i></a>
+<a href="#"><i class="fab fa-instagram"></i></a>
+<a href="#"><i class="fab fa-twitter"></i></a>
+<a href="#"><i class="fab fa-youtube"></i></a>
+<a href="#"><i class="fab fa-tiktok"></i></a>
+</div>
+</div>
+<div class="col-sm-6 col-lg-2">
+<div class="ftit">Quick Links</div>
+<ul class="flinks ps-0">
+<li><a href="#hero"><i class="fas fa-chevron-right"></i>Home</a></li>
+<li><a href="#about"><i class="fas fa-chevron-right"></i>About Us</a></li>
+<li><a href="#menu"><i class="fas fa-chevron-right"></i>Our Menu</a></li>
+<li></li>
+<li></li>
+<li><a href="#contact-section"><i class="fas fa-chevron-right"></i>Contact</a></li>
+</ul>
+</div>
+<div class="col-sm-6 col-lg-2">
+<div class="ftit">Our Menu</div>
+<ul class="flinks ps-0">
+<li><a href="#menu"><i class="fas fa-chevron-right"></i>Burgers</a></li>
+<li><a href="#menu"><i class="fas fa-chevron-right"></i>Pizza</a></li>
+<li><a href="#menu"><i class="fas fa-chevron-right"></i>Fried Chicken</a></li>
+<li><a href="#menu"><i class="fas fa-chevron-right"></i>Wraps &amp; Rolls</a></li>
+<li><a href="#menu"><i class="fas fa-chevron-right"></i>Pasta</a></li>
+<li><a href="#menu"><i class="fas fa-chevron-right"></i>Desserts</a></li>
+</ul>
+</div>
+<div class="col-lg-4">
+<div class="ftit">Get In Touch</div>
+<div class="fci">
+<div class="fciico"><i class="fas fa-map-marker-alt"></i></div>
+<div class="fciinfo"><strong>Address</strong>Choose your delivery location at checkout</div>
+</div>
+<div class="fci">
+<div class="fciico"><i class="fas fa-phone-alt"></i></div>
+<div class="fciinfo"><strong>Phone</strong>WhatsApp: +91 94059 16976</div>
+</div>
+
+
+</div>
+</div>
+</div>
+<div class="fbot">
+<div class="container">
+<div class="d-flex justify-content-between align-items-center flex-wrap gap-2">
+<p>Good food. Great mood. Delivered instantly.</p>
+<div><a href="#">Privacy Policy</a><a href="#">Terms</a><a href="#">Cookies</a></div>
+</div>
+</div>
+</div>
+</footer>
+<!-- Floating cart button -->
+<div class="cartfl" id="cartFloat" title="Open cart">
+  <i class="fas fa-shopping-cart"></i>
+  <span>My Cart</span>
+  <div class="ccount" id="cartCount">0</div>
+</div>
+
+<!-- Cart drawer / panel -->
+<div id="cartPanel" class="cart-panel" aria-hidden="true">
+  <div class="cart-panel-inner">
+    <div class="cart-panel-header">
+      <h3><i class="fas fa-shopping-bag me-2"></i>Your Cart</h3>
+      <button type="button" class="cart-close" id="cartClose" aria-label="Close cart"><i class="fas fa-times"></i></button>
+    </div>
+    <div class="cart-items" id="cartItems">
+      <div class="cart-empty" id="cartEmpty">
+        <i class="fas fa-shopping-basket"></i>
+        <p>Your cart is empty</p>
+        <span>Add items from the menu to get started</span>
+      </div>
+    </div>
+    <div class="cart-footer" id="cartFooter" style="display:none;">
+      <div class="cart-totals">
+        <div class="cart-row"><span>Subtotal</span><strong id="cartSubtotal">₹0</strong></div>
+        <div class="cart-row"><span>Delivery</span><strong id="cartDelivery">₹30</strong></div>
+        <div class="cart-row cart-total-row"><span>Total</span><strong id="cartTotal">₹0</strong></div>
+      </div>
+      <div class="cart-checkout-form">
+        <label class="cart-lbl">Your name <span>*</span></label>
+        <input type="text" id="orderName" class="cart-input" placeholder="Full name" autocomplete="name" required>
+        <label class="cart-lbl">Phone / WhatsApp <span>*</span></label>
+        <input type="tel" id="orderPhone" class="cart-input phone-only" placeholder="10-digit mobile number" autocomplete="tel" inputmode="numeric" maxlength="10" pattern="[0-9]{10}" required>
+        <label class="cart-lbl">Delivery address <span>*</span></label>
+        <textarea id="orderAddress" class="cart-input cart-textarea" placeholder="House / flat, street, area, landmark" rows="2" required></textarea>
+        <button type="button" class="cart-wa-btn" id="orderWhatsApp">
+          <i class="fab fa-whatsapp"></i> Order on WhatsApp
+        </button>
+        <p class="cart-wa-note">Opens WhatsApp with your full order ready to send to +91 94059 16976</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="cartOverlay" class="cart-overlay"></div>
+
+<!-- Back to top -->
+<button id="btt" onclick="window.scrollTo({top:0,behavior:'smooth'})"><i class="fas fa-chevron-up"></i></button>
+<!-- jQuery -->
+<script src="js/jquery-3.7.1.min.js"></script>
+<!-- Bootstrap 5 -->
+<script src="js/bootstrap.bundle.min.js"></script>
+<!-- AOS -->
+<script src="js/aos.js"></script>
+<!-- Swiper -->
+<script src="js/swiper-bundle.min.js"></script>
+<!-- CounterUp -->
+<script src="js/jquery.magnific-popup.min.js"></script>
+<!-- Main js -->
+<script src="js/main.js"></script>
+</body>
+</html>
